@@ -195,9 +195,9 @@
 
       // Add the appropriate letter class to the current element
       function addLetterClass(firstChar, $el, isPrefix) {
-        if ( /\W/.test(firstChar) ) {
-          firstChar = '-'; // not A-Z, a-z or 0-9, so considered "other"
-        }
+        // if ( /\W/.test(firstChar) ) {
+        //   firstChar = '-'; // not A-Z, a-z or 0-9, so considered "other"
+        // }
 
         if ( !isNaN(firstChar) ) {
           firstChar = '_'; // use '_' if the first char is a number
