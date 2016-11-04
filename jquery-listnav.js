@@ -18,7 +18,7 @@
 (function ($) {
   $.fn.listnav = function (options) {
     var opts = $.extend({}, $.fn.listnav.defaults, options),
-        letters = ['_', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '-'],
+        letters = ['_', 'a', 'b', 'c', 'č', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 'š', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'ž', '-'],
         firstClick = false,
         clickEventType = '';
 

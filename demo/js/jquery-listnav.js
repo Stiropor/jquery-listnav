@@ -8,7 +8,7 @@
 *   http://www.opensource.org/licenses/mit-license.php
 *   http://www.gnu.org/licenses/gpl.html
 *
-* Version 2.4.50 (09/02/2015)
+* Version 2.4.10 (09/02/2015)
 * Author: Eric Steinborn
 * Compatibility: jQuery 1.3.x through 1.11.0 and jQuery 2
 * Browser Compatibility: IE6+, FF, Chrome & Safari
@@ -18,7 +18,7 @@
 (function ($) {
   $.fn.listnav = function (options) {
     var opts = $.extend({}, $.fn.listnav.defaults, options),
-        letters = ['_', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '-'],
+        letters = ['_', 'a', 'b', 'c', 'č', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 'š', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'ž', '-'],
         firstClick = false,
         clickEventType = '';
 
