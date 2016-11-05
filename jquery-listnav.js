@@ -344,7 +344,7 @@
           if (html.length === 0) {
             html.push('<a class="all" href="#">'+ opts.allText + '</a><a class="_" href="#">0-9</a>');
           }
-          html.push('<a class="' + letters[i] + '" href="#"><span>' + ((letters[i] === '-') ? '...' : letters[i].toUpperCase()) + '</span></a>');
+          html.push('<a class="' + letters[i] + '" href="#">' + ((letters[i] === '-') ? '...' : letters[i].toUpperCase()) + '</a>');
         }
         return '<div class="ln-letters">' + html.join('') + '</div>' + ((opts.showCounts) ? '<div class="ln-letter-count listNavHide">0</div>' : '');
         // Remove inline styles, replace with css class
