@@ -353,20 +353,19 @@
 				tpl = tpl.replace('%val%', urlvar);
 
 				$(document).on('keyup', 'input[name="listnav-search"]', function() {
-					console.log($list);
 					var searchVal = $(this).val();
 
 					if (searchVal.length > 0) {
 						$('.ln-letters > a.all').click();
 
 						$list.children().each(function(i, val) {
-							strcontains = $(':contains("' + searchVal + '")', val).is('*');
+							strcontains = $(opts.searchElement + ':contains("' + searchVal + '")', val).is('*');
 							$(val).toggleClass('listNavShow', strcontains).toggleClass('listNavHide', !strcontains);
 						});
 
 					} else {
 						$list.children().addClass('listNavHide');
-						if (opts.includeAll) {
+						if (opts.includeAll && $('.ln-letters .all').is(':visible')) {
 							$('.ln-letters .all').click();
 						} else {
 							$('.ln-letters > a.a').click();
@@ -427,7 +426,8 @@
 		filterSelector: '',
 		search: false,
 		searchTemplate: '<input type="search" name="listnav-search" value="%val%">',
-		searchVal: 'ls'
+		searchVal: 'ls',
+		searchElement: ''
 	};
 
 	$.expr[":"].contains = $.expr.createPseudo(function(arg) {
