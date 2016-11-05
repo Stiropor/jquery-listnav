@@ -373,7 +373,7 @@
 					}
 				}).trigger('keyup');
 
-				return $(tpl);
+				return tpl;
 			}
 
 			// creates the HTML for the letter links
