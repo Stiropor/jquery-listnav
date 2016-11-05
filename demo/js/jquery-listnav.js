@@ -301,7 +301,7 @@
 						} else {
 
 							if (opts.search) {
-								$('input[name="listnav-search"]').val('');
+								$('input[name="listnav-search"]').val('').blur();
 							}
 
 							// If you didn't click ALL
